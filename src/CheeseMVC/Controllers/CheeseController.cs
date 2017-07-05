@@ -53,6 +53,7 @@ namespace CheeseMVC.Controllers
                 return Redirect("/Cheese");
             }
 
+            addCheeseViewModel = new AddCheeseViewModel(context.Categories.ToList());
             return View(addCheeseViewModel);
         }
 
